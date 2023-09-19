@@ -12,5 +12,13 @@ setInterval(() => {
 	second.style.transform = `rotate(${sec_rotation}deg)`;
 }, 1000);
 
+d = new Date(); //object of date()
+hr = d.getHours();
+min = d.getMinutes();
+sec = d.getSeconds();
 
+hr_rotation = 30 * hr + min / 2; //converting current time
+	min_rotation = 6 * min;
+	sec_rotation = 6 * sec;
 
+console.log(hr_rotation,"jjjj",min_rotation,"lkghflhg", sec_rotation, "kjhghgdfhgjdghgggfh");
